@@ -1,0 +1,45 @@
+import SideNav from '../../../site-components/SideNav/Sidenav';
+import DocumentationWrapper from '../../../site-components/DocumentationWrapper/DocumentationWrapper'
+
+export const meta = {
+  title: 'SideNav',
+  description: 'The SideNav component is a form of secondary navigation that allows users to travel between relevant topics within an experience.',
+}
+
+export default ({ children }) => <DocumentationWrapper meta={meta}>{children}</DocumentationWrapper>;
+
+<SideNav />
+
+## Principles
+
+1) Discoverable
+
+Make it easy for users to locate the navigation within the page and interact with it.
+
+2)  Contextual
+
+Provide users with an understanding of where they are within a set of pages in the experience.
+
+3) Consistent
+
+Place in-page navigation at the left-hand side of the page in the same position, providing familiar access to relevant content.
+
+## Anatomy
+
+Describe the parts of the component here.
+
+## Usage
+
+In-page navigation is a navigational wayfinding component that directs users across a set of pages. Also called secondary navigation, this component is most commonly used in a content environment.
+
+--------------
+### React Implementation
+
+```
+<SideNav
+    enableScrolling={false}
+    menuTitle={'Side Navigation'}
+/>
+```
+
+WEB: Visit [Storybook](https://pages.github.hy-vee.cloud/web-and-mobile/ui-components/?path=/story/components--sidenav) for an overview of the component API.
